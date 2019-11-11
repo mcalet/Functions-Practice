@@ -1,0 +1,58 @@
+<DOCTYPE html>
+
+	<html lang="en">
+   
+   	 <head>
+
+      <meta charset="utf-8"/>
+
+      <title> Assessment 2</title>
+        
+
+    </head>	
+
+<body>		
+
+	<h1> Function Practice and Conditional Statement </h1> 
+ 	
+ 	<p> Write a function to return a value <p>
+
+ 	
+	
+	<script type="text/javascript">	
+
+	
+	/* The function will return the Generation the user belongs to after entering the year he was born */
+
+	function my_generation (yearborn){
+		
+		if (yearborn <= 1945) {
+			return "Silent Generation";
+
+		} else if (yearborn >= 1946 && yearborn <=1964){
+		 return "Baby Boomers";
+
+		} else if (yearborn >= 1965 && yearborn <=1976){
+		 return "Generation X";
+		
+		}else if (yearborn >= 1977 && yearborn <= 1995){
+			return "Millennials";
+		
+		} else if (yearborn >=1996){
+			return "Centennials";
+		}
+
+	}
+
+	var born_date = prompt("What is your year of birth?"); /* Add the year a person was born */
+
+	var generation = my_generation (born_date);
+
+	alert (generation); /* Will show the generation the user belongs to as an alert  */
+
+	</script>
+
+</body>
+
+
+</html>
